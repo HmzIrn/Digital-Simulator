@@ -1,8 +1,8 @@
-module com.javafxdemo.digitalsimulator {
+module com.DigitalSimulator {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
-
-    opens com.javafxdemo.digitalsimulator to javafx.fxml;
-    exports com.javafxdemo.digitalsimulator;
+    opens com.DigitalSimulator to javafx.fxml;
+    exports com.DigitalSimulator;
 }

@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.javafxdemo.digitalsimulator/com.javafxdemo.digitalsimulator.HelloApplication
+                                com.javafxdemo.digitalsimulator/com.DigitalSimulator.Simulator
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
