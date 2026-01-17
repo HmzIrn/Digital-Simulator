@@ -1,0 +1,16 @@
+#topBar {
+    -fx-background-color: linear-gradient(#ECF1F3, #B5D5E8);
+    -fx-border-color: Black;
+    -fx-border-width: 0 0 1px 0;
+}
+
+#toolPane {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: Black;
+    -fx-border-width: 0 1px 0 0;
+}
+
+#workspace {
+    -fx-background-color: #E0E0D0;
+}
+

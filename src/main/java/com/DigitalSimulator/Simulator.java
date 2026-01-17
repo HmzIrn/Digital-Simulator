@@ -14,6 +14,8 @@ public class Simulator extends Application {
         root.setPrefHeight(600);
         root.setPrefWidth(1000);
 
+        root.getStylesheets().add(getClass().getResource("/com.DigitalSimulator/StyleSheet").toExternalForm());
+
         // Adding Panes to root
         root.setTop(BuildTopBar());
         root.setLeft(BuildToolPane());
@@ -28,7 +30,7 @@ public class Simulator extends Application {
     public HBox BuildTopBar(){
         HBox top = new HBox();
         top.setPrefHeight(40);
-        top.setStyle("-fx-background-color: #f50000;");
+        top.setId("topBar");
 
         return top;
     }
@@ -36,14 +38,15 @@ public class Simulator extends Application {
     public VBox BuildToolPane(){
         VBox toolPane = new VBox();
         toolPane.setPrefWidth(200);
-        toolPane.setStyle("-fx-background-color: #45f500;");
+        toolPane.setId("toolPane");
 
         return toolPane;
     }
 
     public Pane BuildWorkspace(){
         Pane workspace = new Pane();
-        workspace.setStyle("-fx-background-color: #0004f5;");
+        workspace.setId("workspace");
+
         GateNode gate = new GateNode(GateType.AND);
         workspace.getChildren().add(gate);
         gate.setLayoutX(100);
