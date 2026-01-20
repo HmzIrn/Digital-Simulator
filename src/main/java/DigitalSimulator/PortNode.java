@@ -1,4 +1,4 @@
-package com.DigitalSimulator;
+package DigitalSimulator;
 
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
