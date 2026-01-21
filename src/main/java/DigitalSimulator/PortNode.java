@@ -10,6 +10,10 @@ public class PortNode extends Circle {
         super(x, y, 2);
         this.direction = dir;
         setFill(Color.RED);
+
+        this.setOnMouseClicked(event -> {
+            fireEvent(new PortEvent(this));
+        });
     }
 }
 

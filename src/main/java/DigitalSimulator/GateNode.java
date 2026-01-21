@@ -17,7 +17,7 @@ public class GateNode extends Group{
 
         inA = new PortNode(PortType.INPUT, -10, 10);
         inB = new PortNode(PortType.INPUT, -10, 30);
-        outC = new PortNode(PortType.INPUT, 70, 20);
+        outC = new PortNode(PortType.OUTPUT, 70, 20);
 
         Symbol.setContent(type.getSvgPath());
         Symbol.setFill(Color.WHITE);
